@@ -2,13 +2,13 @@
  * @name Discord++
  * @author Vato
  * @authorId 818920049850449961
- * @authorLink https://plusinsta.xyz
- * @version 3.2.1
+ * @authorLink https://vato.xyz
+ * @version 1.1.2
  * @description The ULTIMATE Discord Theme.
- * @website https://plusinsta.github.io/discord-plus
+ * @website https://patatanet.github.io/Discord-/
  * @source https://github.com/PatataNet/Discord-
- * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
- * @invite 2Jwh2nS
+ * @updateUrl https://patatanet.github.io/Discord-/Discord++.theme.css
+ * @invite tptT3ngaZN
 */
 
 /*
@@ -36,6 +36,8 @@
 		→ WhatsApp
 */
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/BlobMoji.css);
+
+@import url("https://discordstyles.github.io/Addons/windows-titlebar.css"); /* Windows titlebar. | Remove this line to disable. */
 
 @import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
