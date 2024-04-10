@@ -1,0 +1,144 @@
+/**
+ * @name Discord++
+ * @author Vato
+ * @authorId 818920049850449961
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description The ULTIMATE Discord Theme.
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PatataNet/Discord-
+ * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
+ * @invite 2Jwh2nS
+*/
+
+/*
+	!!Replace Emoji!!
+	
+	This theme lets you swap the default emojis of discord with the emojis of a provider of your choice.
+	To change the provider simply swap the marked word in the import url down below with a supported provider listed below.
+	The name of the provider is CASE SENSITIVE, meaning you have to write it exactly like it's written below.
+	Correct: Apple
+	False: apple, APPLE, aPpLe
+	
+	Supported Providers:
+		→ Apple
+		→ BlobMoji
+		→ Facebook
+		→ Google
+		→ Huawei
+		→ JoyPixels
+		→ Microsoft
+		→ Microsoft-3D
+		→ OpenMoji
+		→ Samsung
+		→ Samsung-Old
+		→ Toss
+		→ WhatsApp
+*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/BlobMoji.css);
+
+@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://raw.githubusercontent.com/PatataNet/Discord-/main/verticalIcons.css");
+
+/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
+
+.theme-dark {
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: url(https://th.bing.com/th/id/R.ee6a56eaf831baeccad6d28fa5233b04?rik=vsJN2oiyOGNrnA&pid=ImgRaw&r=0);
+
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 300;
+  --dplus-accent-color-saturation: 0%;
+  --dplus-accent-color-lightness: 50%;
+
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 200;
+  --dplus-background-color-saturation-amount: 0;
+  --dplus-background-color-lightness-amount: 1.2;
+  --dplus-background-color-alpha: 0.65;
+}
+
+/* If you use light theme, you can give it unique settings that are separate from dark theme. */
+.theme-light {
+  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
+  
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+  
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+/* Fonts */
+/* You can use any installed font on your device. */
+  --dplus-font-ui: 'Tilt Neon';
+  --dplus-font-body: 'Tilt Neon';
+  --dplus-font-header: 'Pixelify Sans';
+
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 5px;
+  --dplus-radius-avatar: 50%;
+  --dplus-radius-server: 25%;
+
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 15px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 8px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+
+--accent: 0, 231, 169; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+--channels-width: 300px; /* Width of the channels list. | Default: 300px */
+--guilds-width: 95px; /* Width of the server list. | Default: 105px */
+--members-width: 280px; /* Width of the members list. | Default: 280px */
+--server-size: 50px; /* Size of the servers inside the server list. | Default: 50px */
+
+
+--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
+}
