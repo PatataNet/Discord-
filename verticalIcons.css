@@ -2,7 +2,7 @@
   outline: none !important;
 }
 #app-mount .guilds__2b93a .scroller_de945b {
-  margin-bottom: var(--user-area, 220px);
+  margin-bottom: var(--user-area, 225px);
 }
 #app-mount .guilds__2b93a .unreadMentionsIndicatorBottom__9351c {
   bottom: calc(var(--user-area) + 10px);
@@ -25,11 +25,11 @@
 #app-mount .panels__58331 > .container_debb33 > [style="flex: 0 1 auto;"] .button_ae40a4 {
   width: 100%;
   border-radius: 0;
-  padding: 12px 0;
+  padding: 9px 0;
   height: auto;
 }
 #app-mount .panels__58331 > .container_debb33 .avatarWrapper__500a6 {
-  margin-right: 0;
+  margin-right: -42px;
   margin-top: 12px;
 }
 #app-mount .panels__58331 > .container_debb33 .avatarWrapper__500a6 .svg_a6bf1c {
